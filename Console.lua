@@ -14,7 +14,23 @@ if not getgenv()._console_message_counter then
     getgenv()._console_message_counter = 3000
 end
 
-local module = {}
+local module = {
+    Images = { -- scrapped from constants module
+		Minimize = "rbxasset://textures/DevConsole/Minimize.png",
+		Maximize = "rbxasset://textures/DevConsole/Maximize.png",
+		Clear = "rbxasset://textures/DevConsole/Clear.png",
+		Close = "rbxasset://textures/DevConsole/Close.png",
+		Search = "rbxasset://textures/DevConsole/Search.png",
+		Error = "rbxasset://textures/DevConsole/Error.png",
+		Warning = "rbxasset://textures/DevConsole/Warning.png",
+		Info = "rbxasset://textures/DevConsole/Info.png",
+		Check = "rbxasset://textures/ui/LuaChat/icons/ic-check.png",
+		FilterUnfilled = "rbxasset://textures/DevConsole/Filter-stroke.png",
+		FilterFilled = "rbxasset://textures/DevConsole/Filter-filled.png",
+		RightArrow = "rbxasset://textures/DevConsole/Arrow.png",
+		DownArrow = "rbxasset://textures/TerrainTools/button_arrow_down.png",
+	}
+}
 
 function module.print(msg, img, clr)
     getgenv()._console_message_counter = getgenv()._console_message_counter + 1
