@@ -31,7 +31,7 @@ local module = {
 		DownArrow = "rbxasset://textures/TerrainTools/button_arrow_down.png",
 	},
 
-	Color = {
+	Colors = {
 		Black = Color3.fromRGB(0, 0, 0),
 		BaseGray = Color3.fromRGB(30, 30, 30),
 		TextBoxGray = Color3.fromRGB(45, 45, 45),
