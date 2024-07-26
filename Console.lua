@@ -29,6 +29,24 @@ local module = {
 		FilterFilled = "rbxasset://textures/DevConsole/Filter-filled.png",
 		RightArrow = "rbxasset://textures/DevConsole/Arrow.png",
 		DownArrow = "rbxasset://textures/TerrainTools/button_arrow_down.png",
+	},
+
+	Color = {
+		Black = Color3.fromRGB(0, 0, 0),
+		BaseGray = Color3.fromRGB(30, 30, 30),
+		TextBoxGray = Color3.fromRGB(45, 45, 45),
+		ErrorRed = Color3.fromRGB(215, 90, 74),
+		HighlightBlue = Color3.fromRGB(0, 162, 255),
+		WarningYellow = Color3.fromRGB(255, 218, 68),
+		SelectedBlue = Color3.fromRGB(50, 181, 255),
+		UnselectedGray = Color3.fromRGB(78, 84, 96),
+		SelectedGray = Color3.fromRGB(102, 108, 119),
+		HoverGreen = Color3.fromRGB(70, 197, 124),
+		TabUnselectedGray = Color3.fromRGB(102, 108, 119),
+		BorderGray = Color3.fromRGB(184, 184, 184),
+		Text = Color3.fromRGB(255, 255, 255),
+		ActiveBox = Color3.fromRGB(63, 198, 121),
+		InactiveBox = Color3.fromRGB(184, 184, 184),
 	}
 }
 
