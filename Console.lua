@@ -14,6 +14,21 @@ if not getgenv()._console_message_counter then
     getgenv()._console_message_counter = 3000
 end
 
+local checkFiles = {
+    ['Checkmark'] = game:HttpGet('https://github.com/Scriptta/customconsole/blob/main/Checkmark.png?raw=true')
+}
+
+if not isfolder('CustomConsoleCATLOVA') then
+    makefolder('CustomConsoleCATLOVA')
+
+    for Index, File in checkFiles do
+        if not isfile('CustomConsoleCATLOVA/' .. Index) then
+            warn('Made file: ' .. Index)
+            makefile('CustomConsoleCATLOVA/' .. Index, File)
+        end
+    end
+end
+
 local module = {
     Images = { -- scrapped from constants module
 		Minimize = "rbxasset://textures/DevConsole/Minimize.png",
@@ -24,7 +39,7 @@ local module = {
 		Error = "rbxasset://textures/DevConsole/Error.png",
 		Warning = "rbxasset://textures/DevConsole/Warning.png",
 		Info = "rbxasset://textures/DevConsole/Info.png",
-		Check = "rbxasset://textures/ui/LuaChat/icons/ic-check.png",
+		Check = getcustomasset('CustomConsoleCATLOVA/Checkmark'),
 		FilterUnfilled = "rbxasset://textures/DevConsole/Filter-stroke.png",
 		FilterFilled = "rbxasset://textures/DevConsole/Filter-filled.png",
 		RightArrow = "rbxasset://textures/DevConsole/Arrow.png",
